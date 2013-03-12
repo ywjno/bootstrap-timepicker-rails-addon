@@ -26,6 +26,14 @@ Or install it yourself as:
 
 ## Usage
 
+Add this line to app/assets/javascripts/application.js
+
+    //= require bootstrap-timepicker
+
+Add this line to app/assets/stylesheets/application.css
+
+    *= require bootstrap-timepicker
+
 Just call timepicker() with any selector in view.
 
 ```javascript
