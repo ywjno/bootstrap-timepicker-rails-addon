@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Bootstrap::Timepicker::Rails::Addon::VERSION
   gem.authors       = ["Thomas Yang"]
   gem.email         = ["ywjno.dev@gmail.com"]
-  gem.description   = %q{This gem provides bootstrap-timepicker.js and bootstrap-timepicker.css for your Rails 3 application.}
-  gem.summary       = %q{Use bootstrap-timepicker with Rails 3}
+  gem.description   = %q{This gem provides bootstrap-timepicker.js and bootstrap-timepicker.css for your Rails 3 and 4 application.}
+  gem.summary       = %q{Use bootstrap-timepicker with Rails 3 and 4}
   gem.homepage      = "https://github.com/ywjno/bootstrap-timepicker-rails-addon"
 
   gem.files         = Dir["{lib,vendor}/**/*"] + ["LICENSE", "README.md"]
@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_dependency "railties", "~> 3.1"
+  gem.add_dependency "railties", ">= 3.1", "< 5.0"
   gem.add_development_dependency "bundler", ">= 1.0"
   gem.add_development_dependency "rake"
 end
