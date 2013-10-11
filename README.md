@@ -49,7 +49,7 @@ And here is the html code sample.
 </div>
 ```
 
-Please view the bootstrap-timepicker <a href="http://jdewit.github.com/bootstrap-timepicker">demos & documentation</a>.
+Please view the bootstrap-timepicker <a href="http://jdewit.github.io/bootstrap-timepicker/">demos & documentation</a>.
 
 ## Contributing
 
