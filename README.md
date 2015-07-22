@@ -1,7 +1,7 @@
 # Bootstrap::Timepicker::Rails::Addon
 This is the GEMified version of [bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker)
 
-bootstrap-timepicker-rails-addon project integrates Timepicker for Twitter Bootstrap 2.x with Rails 3 and 4 assets pipeline.
+bootstrap-timepicker-rails-addon project integrates Timepicker for Twitter Bootstrap with Rails 3 and 4 assets pipeline.
 
 ## Installation
 
