@@ -1,19 +1,28 @@
 # Bootstrap::Timepicker::Rails::Addon
 This is the GEMified version of [bootstrap-timepicker](https://github.com/jdewit/bootstrap-timepicker)
 
-bootstrap-timepicker-rails-addon project integrates Timepicker for Twitter Bootstrap with Rails 3 and 4 assets pipeline.
+bootstrap-timepicker-rails-addon project integrates Timepicker for Twitter Bootstrap 3 with Rails 3 and 4 assets pipeline.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'bootstrap-sass', '~> 2.3.2.0'
-    gem 'bootstrap-timepicker-rails-addon'
+1) if you used Bootstrap 3 version,
+```ruby
+    gem 'bootstrap-sass', '~> 3.3.5'
+    gem 'bootstrap-timepicker-rails-addon', '~> 0.5.1'
+```
 
-Or you can install from latest build:
+2) if you used Bootstrap 2 version,
+```ruby
+    gem 'bootstrap-sass', '~> 2.3.2.0'
+    gem 'bootstrap-timepicker-rails-addon', '0.3.0'
+```
+
+Or you can install from latest build(only support Bootstrap 3 version in master branch):
 
 ```ruby
-gem 'bootstrap-sass', '~> 2.3.2.0'
+gem 'bootstrap-sass', '~> 3.3.5'
 gem 'bootstrap-timepicker-rails-addon', :require => 'bootstrap-timepicker-rails-addon',
                                         :git => 'git://github.com/ywjno/bootstrap-timepicker-rails-addon.git'
 ```
@@ -32,9 +41,9 @@ Add this line to app/assets/javascripts/application.js
 
     //= require bootstrap-timepicker
 
-Add this line to app/assets/stylesheets/application.css
+Add this line to app/assets/stylesheets/application.css.scss
 
-    *= require bootstrap-timepicker
+    @import "bootstrap-timepicker";
 
 Just call timepicker() with any selector in view.
 
@@ -45,9 +54,9 @@ $('#timepicker').timepicker();
 And here is the html code sample.
 
 ```html
-<div class="input-append bootstrap-timepicker">
-  <input id="timepicker" type="text" class="input-small">
-  <span class="add-on"><i class="icon-time"></i></span>
+<div class="input-group bootstrap-timepicker timepicker">
+  <input id="timepicker1" type="text" class="form-control input-small">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
 </div>
 ```
 
