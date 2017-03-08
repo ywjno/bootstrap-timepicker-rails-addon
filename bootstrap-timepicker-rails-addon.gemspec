@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Bootstrap::Timepicker::Rails::Addon::VERSION
   gem.authors       = ["Thomas Yang"]
   gem.email         = ["ywjno.dev@gmail.com"]
-  gem.description   = %q{This gem provides bootstrap-timepicker.js and bootstrap-timepicker.css for your Rails 3 and 4 application.}
-  gem.summary       = %q{Use bootstrap-timepicker with Rails 3 and 4}
+  gem.description   = %q{This gem provides bootstrap-timepicker.js and bootstrap-timepicker.css for your Rails 3, 4 and 5 application.}
+  gem.summary       = %q{Use bootstrap-timepicker with Rails 3, 4 and 5}
   gem.homepage      = "https://github.com/ywjno/bootstrap-timepicker-rails-addon"
 
   gem.files         = Dir["{lib,vendor}/**/*"] + ["LICENSE", "README.md"]
