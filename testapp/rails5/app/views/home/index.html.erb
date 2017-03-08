@@ -1,0 +1,27 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<div class="input-group bootstrap-timepicker timepicker">
+  <input id="timepicker1" type="text" class="form-control input-small">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+</div>
+
+<div class="input-group bootstrap-timepicker timepicker">
+  <input id="timepicker2" type="text" class="form-control input-small">
+  <span class="input-group-addon">
+    <i class="glyphicon glyphicon-time"></i>
+  </span>
+</div>
+
+<script type="text/javascript">
+  $('#timepicker1').timepicker();
+
+  $('#timepicker2').timepicker({
+    minuteStep: 1,
+    template: 'modal',
+    appendWidgetTo: 'body',
+    showSeconds: true,
+    showMeridian: false,
+    defaultTime: false
+  });
+</script>
